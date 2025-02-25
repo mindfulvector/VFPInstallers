@@ -33,7 +33,11 @@ The file `VFP9SP2_BugFixList.htm` lists the changes in SP2.
 
 ### Step 2: Upgrade VFP 9 SP2 to Hotfix 3 (the Latest Hotfix)
 
-Execute `VFP90SP2-KB968409-ENU.exe` to extract files into a folder you will subsequently specify. Follow the instructions in the readme (in that folder) to copy the files to their correct locations.
+1. Ensure that Visual FoxPro is not running.
+
+2. Run `.\install_sp2_hotfix3.ps1` from a new Administrator PowerShell window. This will:
+    * Automatically execute `VFP90SP2-KB968409-ENU.exe` to extract files into a folder for you.
+    * Backup existing files to be updated, then copy new files into place.
 
 ### Step 3: Install MS XML4
 
