@@ -35,13 +35,17 @@ The file `VFP9SP2_BugFixList.htm` lists the changes in SP2.
 
 1. Ensure that Visual FoxPro is not running.
 
-2. Run `.\install_sp2_hotfix3.ps1` from a new Administrator PowerShell window. This will:
-    * Automatically execute `VFP90SP2-KB968409-ENU.exe` to extract files into a folder for you.
-    * Backup existing files to be updated, then copy new files into place.
+2. Run `.\install_sp2_hotfix3.ps1` from a new Administrator PowerShell window withe the following command:
+   ```
+   powershell -ExecutionPolicy Bypass -File .\install_sp2_hotfix3.ps1
+   ```
+    * This will:
+      * Automatically execute `VFP90SP2-KB968409-ENU.exe` to extract files into a folder for you.
+      * Backup existing files to be updated, then copy new files into place.
 
 ### Step 3: Install MS XML4
 
-Run MSXML.msi to install MS XML version 4, which is required by the Task Pane and the XMLAdapter class.
+Run `MSXML.msi` to install `MS XML version 4`, which is required by the `Task Pane` and the `XMLAdapter` class.
 
 ## Runtime Installers
 
